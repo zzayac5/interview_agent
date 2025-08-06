@@ -26,9 +26,12 @@ Repository for a project building an interviewing AI agent.
 
 # DAY 1 : 6 AUG 2025
 
-Today I am focused on getting this repository and VS code set up to work within. 
-This sounds super simple to most but I am using VS code for this build because I will also be using it as a chance to learn JS and it was suggested to use VS code for that and not Pycharm. 
+*Today I am focused on getting this repository and VS code set up to work within. 
+
+<p> This sounds super simple to most but I am using VS code for this build because I will also be using it as a chance to learn JS and it was suggested to use VS code for that and not Pycharm. 
 Also I want to get an initial build of the requirements and a design for the architecture for the use case. 
+<br>
+<br>
 
 
 <img width="4422" height="2601" alt="diagram-export-8-6-2025-2_01_42-PM" src="https://github.com/user-attachments/assets/9886ce3f-060f-4642-85ed-629d186fcc9f" />
