@@ -31,3 +31,4 @@ This sounds super simple to most but I am using VS code for this build because I
 Also I want to get an initial build of the requirements and a design for the architecture for the use case. 
 
 
+<img width="4422" height="2601" alt="diagram-export-8-6-2025-2_01_42-PM" src="https://github.com/user-attachments/assets/9886ce3f-060f-4642-85ed-629d186fcc9f" />
