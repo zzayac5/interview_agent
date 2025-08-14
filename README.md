@@ -36,7 +36,7 @@ Also I want to get an initial build of the requirements and a design for the arc
 
 <img width="4422" height="2601" alt="diagram-export-8-6-2025-2_01_42-PM" src="https://github.com/user-attachments/assets/9886ce3f-060f-4642-85ed-629d186fcc9f" />
 
-<p> So I started by outline the requirements in an html file with JS. I wanted to make the UI simple to start there doesnt need to be much in terms of the submission. This will be the first page of the application. Upon submission it should then take you to a schedule call page. Where you can review the LLMs synopsis of the content (in case you didnt read the whole thing) and a few questions the AI may ask you.</p>
+<p> So I started by outline the requirements in an md and then I am using HTML, JS, and CSS for building the front end for now. I wanted to make the UI simple to start there doesnt need to be much in terms of the submission. This will be the first page of the application. Upon submission it should then take you to a schedule call page. Where you can review the LLMs synopsis of the content (in case you didnt read the whole thing) and a few questions the AI may ask you.</p>
 <br/> 
 <br/>
 <img width="925" height="515" alt="Screenshot 2025-08-07 at 4 20 07 AM" src="https://github.com/user-attachments/assets/23389b01-b8b7-4b64-8908-c1fe2c8871b7" />

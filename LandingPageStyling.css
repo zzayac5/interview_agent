@@ -1,0 +1,12 @@
+      img {
+        width: 700px;
+        border-radius: 50px;
+        float:none;
+        margin-right: 20;
+      }
+      .WebsiteName {
+        font-family: Arial;
+        font-weight: bolder;
+        font-size: medium;
+      }
+      

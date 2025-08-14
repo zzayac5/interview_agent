@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interviewer Bot Submission</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 500px;
+      margin: 40px auto;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+    .checkboxes {
+      margin-top: 10px;
+    }
+    .checkboxes label {
+      display: inline-block;
+      margin-right: 20px;
+    }
+    .slider-labels {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9em;
+      margin-bottom: 5px;
+    }
+    .output {
+      margin-top: 20px;
+      padding: 10px;
+      border-top: 1px solid #ccc;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 15px;
+      font-size: 1em;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Interviewer Bot Submission</h2>
+
+  <label for="urlInput">Paste a URL:</label>
+  <input type="text" id="urlInput" placeholder="https://example.com/article">
+
+  <div class="checkboxes">
+    <label><input type="radio" name="opinion" value="agree"> Agree</label>
+    <label><input type="radio" name="opinion" value="disagree"> Disagree</label>
+  </div>
+
+  <label for="temperatureSlider">Temperature of Your Take on This:</label>
+  <div class="slider-labels">
+    <span>Bland 🌱</span>
+    <span>🔥 Spicy</span>
+  </div>
+  <input type="range" id="temperatureSlider" min="0" max="10" step="1" value="5">
+
+  <button onclick="submitTake()">Submit Take</button>
+
+  <div class="output" id="output"></div>
+
+  <script>
+    function submitTake() {
+      const url = document.getElementById("urlInput").value.trim();
+      const opinion = document.querySelector('input[name="opinion"]:checked');
+      const temp = document.getElementById("temperatureSlider").value;
+
+      const outputDiv = document.getElementById("output");
+      outputDiv.innerHTML = "";
+
+      if (!url) {
+        alert("Please enter a URL.");
+        return;
+      }
+
+      if (!opinion) {
+        alert("Please select agree or disagree.");
+        return;
+      }
+
+      const tempLabel = temp < 4 ? "Bland 🌱" : temp < 7 ? "Medium 🌶️" : "Spicy 🔥";
+
+      const summary = `
+        <strong>URL:</strong> <a href="${url}" target="_blank">${url}</a><br>
+        <strong>Opinion:</strong> ${opinion.value}<br>
+        <strong>Take Temperature:</strong> ${temp} / 10 (${tempLabel})
+      `;
+
+      outputDiv.innerHTML = summary;
+      console.log({ url, opinion: opinion.value, temperature: temp });
+    }
+  </script>
+
+</body>
+</html>
