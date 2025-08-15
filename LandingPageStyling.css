@@ -2,11 +2,13 @@
         width: 700px;
         border-radius: 50px;
         float:none;
-        margin-right: 20;
+        margin:auto;
       }
       .WebsiteName {
         font-family: Arial;
         font-weight: bolder;
         font-size: medium;
       }
+      
+  
       
